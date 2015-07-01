@@ -24,6 +24,10 @@
 		96198EE51B444937009054CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96198EC01B444937009054CE /* UIKit.framework */; };
 		96198EED1B444937009054CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96198EEB1B444937009054CE /* InfoPlist.strings */; };
 		96198EEF1B444937009054CE /* LandscapeExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96198EEE1B444937009054CE /* LandscapeExampleTests.m */; };
+		96198EFC1B444A09009054CE /* icelevel_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 96198EF81B444A09009054CE /* icelevel_grid.png */; };
+		96198EFD1B444A09009054CE /* icelevel_grid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96198EF91B444A09009054CE /* icelevel_grid@2x.png */; };
+		96198EFE1B444A09009054CE /* icelevel.png in Resources */ = {isa = PBXBuildFile; fileRef = 96198EFA1B444A09009054CE /* icelevel.png */; };
+		96198EFF1B444A09009054CE /* icelevel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96198EFB1B444A09009054CE /* icelevel@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		96198EEA1B444937009054CE /* LandscapeExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LandscapeExampleTests-Info.plist"; sourceTree = "<group>"; };
 		96198EEC1B444937009054CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96198EEE1B444937009054CE /* LandscapeExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandscapeExampleTests.m; sourceTree = "<group>"; };
+		96198EF81B444A09009054CE /* icelevel_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icelevel_grid.png; path = LandscapeExample/icelevel_grid.png; sourceTree = "<group>"; };
+		96198EF91B444A09009054CE /* icelevel_grid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icelevel_grid@2x.png"; path = "LandscapeExample/icelevel_grid@2x.png"; sourceTree = "<group>"; };
+		96198EFA1B444A09009054CE /* icelevel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icelevel.png; path = LandscapeExample/icelevel.png; sourceTree = "<group>"; };
+		96198EFB1B444A09009054CE /* icelevel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icelevel@2x.png"; path = "LandscapeExample/icelevel@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 		96198EB01B444937009054CE = {
 			isa = PBXGroup;
 			children = (
+				96198F001B444A18009054CE /* Backgrounds */,
 				96198EC41B444937009054CE /* LandscapeExample */,
 				96198EE81B444937009054CE /* LandscapeExampleTests */,
 				96198EBB1B444937009054CE /* Frameworks */,
@@ -162,6 +171,17 @@
 				96198EEB1B444937009054CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96198F001B444A18009054CE /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				96198EF81B444A09009054CE /* icelevel_grid.png */,
+				96198EF91B444A09009054CE /* icelevel_grid@2x.png */,
+				96198EFA1B444A09009054CE /* icelevel.png */,
+				96198EFB1B444A09009054CE /* icelevel@2x.png */,
+			);
+			name = Backgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +261,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				96198EC91B444937009054CE /* InfoPlist.strings in Resources */,
+				96198EFD1B444A09009054CE /* icelevel_grid@2x.png in Resources */,
 				96198EDC1B444937009054CE /* Images.xcassets in Resources */,
 				96198EDA1B444937009054CE /* Spaceship.png in Resources */,
 				96198ED21B444937009054CE /* Main.storyboard in Resources */,
+				96198EFF1B444A09009054CE /* icelevel@2x.png in Resources */,
+				96198EFE1B444A09009054CE /* icelevel.png in Resources */,
+				96198EFC1B444A09009054CE /* icelevel_grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

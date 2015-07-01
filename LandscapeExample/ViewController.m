@@ -14,18 +14,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
+// this gets called AFTER viewDidLoad and AFTER the Application realizes it is supposed to
+// be in Landscape mode
+
+-(void) viewWillLayoutSubviews {
+    
+    // This is PROBABLY not needed - but could be some day...
+    [super viewWillLayoutSubviews];
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
-    // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    // We only want the scene being created ONCE - regardless of how many times
+    // this code may be executed.
     
-    // Present the scene.
-    [skView presentScene:scene];
+    if (! skView.scene) {
+        // Create and configure the scene.
+        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+
+        // Present the scene.
+        [skView presentScene:scene];
+    }
+    
+    
 }
 
 - (BOOL)shouldAutorotate
